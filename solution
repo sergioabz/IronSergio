@@ -1,0 +1,62 @@
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon
+$ cd
+
+chech@Sergios-Laptop MINGW64 ~
+$ cd IHLABS/Week_1/Day_1/Afternoon/IronMegha
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (main)
+$ git checkout -b Classmate
+Switched to a new branch 'Classmate'
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ touch Sergio.txt ; echo "I joined IronHack because I want to learn a lot and be succesful" >> Sergio.txt
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ ls
+README.md  Sergio.txt  about.txt  marina.txt
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git add Sergio.txt
+warning: in the working copy of 'Sergio.txt', LF will be replaced by CRLF the next time Git touches it
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git commit -m "I added file"
+[Classmate 346ee30] I added file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Sergio.txt
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git status
+On branch Classmate
+nothing to commit, working tree clean
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git push
+fatal: The current branch Classmate has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Classmate
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git status
+On branch Classmate
+nothing to commit, working tree clean
+
+chech@Sergios-Laptop MINGW64 ~/IHLABS/Week_1/Day_1/Afternoon/IronMegha (Classmate)
+$ git push origin Classmate
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 201.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Classmate' on GitHub by visiting:
+remote:      https://github.com/sergioabz/IronMegha/pull/new/Classmate
+remote:
+To https://github.com/sergioabz/IronMegha.git
+ * [new branch]      Classmate -> Classmate
